@@ -1,0 +1,317 @@
+/* GLOBAL */
+
+* {
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.v-align-outer {
+  display: table;
+  width: 100%;
+}
+.v-align-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+section {
+	padding-top: 50px;
+}
+
+.no-margin {
+	margin:0;
+}
+
+.no-padding {
+	padding:0;
+}
+
+.float-right {
+	float: right;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+/* NAVBAR */
+
+ header {
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	position: fixed;
+	z-index: 1;
+	color: white;
+	text-transform: uppercase;
+	background-color: rgb(242,17,15);
+	padding:0.5%;
+}
+
+header a {
+	color: white;
+}
+
+nav a {
+	padding-left: 15px;
+	color: white;
+	text-transform: none;
+}
+
+.navstuff a:hover, 
+.navstuff a:active {
+	color: black;
+} 
+
+/* LANDING */
+
+.landing {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	color: rgb(52,128,134);
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.last-name {
+	margin-bottom: 5%;
+}
+
+h2 {
+	font-family: 'Marck Script', cursive;
+}
+
+.landing a {
+	padding: 2%;
+	border-radius: 10%;
+	background-color: rgba(240,194,40,1);
+	color: white;
+}
+
+.landing a:hover {
+	background-color: rgb(242,17,15);
+}
+
+.bkg-white {
+	background-color: rgba(253,255,252,1);
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	border-radius: 50%;
+	padding: 5%;
+}
+
+.orange-font {
+	color: rgb(242,17,16);
+}
+
+
+/* MEDIA QUERY FOR SMALL DEVICES */
+
+@media (min-width: 768px) {
+	.bkg-white {width:50%;}
+}
+
+/* MEDIA QUERY FOR MEDIUM & LARGE DEVICES */
+@media (min-width: 1000px) {
+	h1 {font-size: 500%;}
+	.bkg-white {width:50%;}
+	nav {float:right;}
+	.navstuff {text-align: left}
+}
+
+/* BIO */
+#about {
+	width: 100%;
+	height: auto;
+	color: black;
+	padding-bottom:50px;
+}
+
+.headshot {
+	width: 100%;
+}
+	
+.myface img {
+	max-width: 50%;
+	border-radius: 50%;
+}
+
+.myface span {
+	text-transform: uppercase;
+}
+
+#about h3 {
+	font-family: 'Marck Script', cursive;
+	font-size: 300%;
+	color: rgb(242,17,16);
+}
+
+#about .bkg-white {
+	width: 50%;
+}
+
+#about h4 {
+	font-size: 150%;
+	color: rgb(52,128,134);
+}
+
+#about img {
+	max-width: 200px;
+	border-radius: 50%;
+}
+
+#about a {
+	padding: 0.5%;
+	border-radius: 10%;
+	background-color: rgba(240,194,40,1);
+	color: white;
+}
+
+#about a:hover {
+	background-color: rgb(242,17,16);
+	color: white;
+}
+
+#about span {
+	color: rgb(242,17,16);
+	text-transform: uppercase;
+	font-size: 110%
+}
+
+#about .quick-bio span {
+	font-weight: bold;
+	color: black;
+	font-size: 100%;
+}
+
+/* PORTFOLIO SECTION */	
+
+#portfolio {
+	/*height: 100vh;*/
+	margin-bottom: 5%;
+}
+
+#portfolio .button{
+	padding: 1%;
+	border-radius: 10%;
+	background-color: rgba(240,194,40,1);
+	color: white;
+}
+
+#portfolio .button:hover{
+	background-color: rgb(242,17,15);
+	color: white;
+}
+
+.bkg-red {
+	width: 100%;
+	background-color: rgb(242,17,15);
+}
+
+#portfolio h3 {
+	color: rgb(231,29,54);
+	font-family: 'Marck Script', cursive;
+	font-size: 300%;
+}
+
+#portfolio hr {
+	max-width: 100px;
+	color: rgb(231,29,54);
+}
+
+#portfolio img {
+	max-width: 300px;
+	border-radius: 50%;
+}
+
+.margin-top-big {
+	margin-top: 5%;
+}
+
+.portfolio-box {
+	text-align: center;
+	position: relative;
+}
+
+.portfolio-text {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-right: auto;
+	left: 3%;
+}
+
+.fade-in {
+	opacity: 0;
+}
+
+.fade-out {
+	opacity: 1;
+}
+
+#portfolio a:hover .fade-in {
+	opacity: 1;
+	transition: .45s;
+}
+
+#portfolio a:hover .fade-out {
+	opacity: 0;
+	transition: .45s;
+}
+
+#portfolio span {
+	color: red;
+	font-weight: bold;
+}
+/* CONTACT */ 
+#contact {
+	width: 100%;
+	margin: 0;
+	padding: 5%;	
+	color: white;
+	background-color: rgb(52,128,134);
+}
+
+#contact h3 {
+	font-family: 'Marck Script', cursive;
+	font-size: 300%;
+}
+#contact hr {
+	max-width: 100px;
+	color: white;
+}
+#contact i {
+	color: white;
+}
+
+#contact a {
+	color: white;
+	font-size: 15px;
+	margin: 1px;
+}
+
+.margin-top {
+	margin-top: 2%;
+}
+
+
