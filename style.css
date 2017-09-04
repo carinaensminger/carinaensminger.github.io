@@ -636,3 +636,7 @@ display:none;
 iframe {
     max-width: 100%;
 }
+
+.about .col-sm-push-6 {
+	padding-bottom:2rem;
+}
