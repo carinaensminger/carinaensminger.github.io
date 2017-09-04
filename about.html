@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carina Ensminger</title>
+	<link rel="icon" href="public/img/logo.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/public/img/logo.ico" type="image/x-icon" />
+	<!-- Fonts, Font Awesome and Bootstrap -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Carousel -->
+	<link type="text/css" media="all" rel="stylesheet" href="public/js/slick/slick.css" />
+	<link type="text/css" media="all" rel="stylesheet" href="public/js/slick/slick-theme.css" />
+	<!-- Custom CSS -->
+	<link type="text/css" media="all" rel="stylesheet" href="style.css" />
+	<link type="text/css" media="all" rel="stylesheet" href="public/css/media.css" />
+	<!-- jQuery & Carousel -->
+</head>
+
+<body>
+
+<!-- Main Menu: -->
+<div class="header">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+				<a href="index.html"><p class="header-name">carina ensminger</p></a>
+			</div>
+			<div class="col-sm-6 nav-bar col-xs-12">
+				<div class="header_mobile_menu"><i class="fa fa-bars"></i></div>
+				<div class="header_right">
+					<ul id="menu-main-menu" class="ce_header_menu">
+						<li class="menu-item"><a href="index.html" data-scroll>work</a></li>
+						<li class="menu-item"><a href="about.html" data-scroll>About</a></li>
+					</ul>
+					<a href="#contact" class="ce_button ce_outline_button" data-scroll>Contact</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Hero -->
+
+<div class="container-fluid hero">
+	<div class="row">
+		<div class="col-md-12">
+			<img src="public/img/hero.jpg">
+			<div class="hero-center-block">
+				<div class="hero-circle">
+					<div class="hero-text">
+						<h2>about</h2>
+						<p>me</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- About Section -->
+<div class="container">
+	<div class="row intro">
+		<div class="col-md-12">
+			
+		</div>
+	</div>
+	<div class="row about">
+		<div class="col-md-6 col-sm-6">
+			<img src="public/img/me.jpg">
+		</div>
+		<div class="col-md-6 col-sm-6">
+			<div class="content-text-block">
+				<div class="content-text">
+					<h2>bio</h2>
+					<p>I am a UX/UI Designer & Strategist working and living in Boston. I want to design and build products that matter - products that solve consumer pain points and make an impact in user's lives.</p> 
+
+					<p>I love speaking to and understanding people. I believe that all products that make a difference begin with the user, begin with empathy and observation. This philosophy informs my design process and decisions.</p>
+
+					<p>When I'm not designing websites and apps, I'm reading, knitting, playing video games, or practicing circus trapeze.</p><br>
+
+					<h2>skills</h2>
+					<p>User-centered design, Wireframing, Journey Mapping, Rapid Prototyping, User Testing, HTML5, CSS3, Bootstrap, Sketch, InvisionApp, Adobe Creative Suite, Axure</p>
+					<a href="mailto:carina.ensminger@gmail.com" class="envelope"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					<a href="https://www.linkedin.com/in/carinaensminger/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					<a href="public/img/resume.pdf" target="_blank"><i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Contact-->
+<section>
+	<div class="container-fluid background-gray contact" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>contact</h3>
+					<a href="mailto:carina.ensminger@gmail.com">email</a>
+					<a href="public/img/resume.pdf" target="_blank">resume</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- JS SCRIPTS -->
+	<script src="smooth-scroll.js"></script>
+	<script>
+	   smoothScroll.init({
+	       selector: '[data-scroll]', // Selector for links (must be a valid CSS selector)
+	        selectorHeader: '[data-scroll-header]', // Selector for fixed headers (must be a valid CSS selector)
+	        speed: 600, // Integer. How fast to complete the scroll in milliseconds
+	        easing: 'easeInOutQuad', // Easing pattern to use
+	        offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+	        updateURL: true, // Boolean. If true, update the URL hash on scroll
+	        callback: function ( anchor, toggle ) {} // Function to run after scrolling
+	   });
+	</script>
+	<!-- BOOTSTRAP Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
